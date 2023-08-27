@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Remote Smarthome Controller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container_mainpage">
+        <div id="Title">
+            <h1 >REMOTE CONTROLLER</h1>
+        </div>
+      <div id="time">
+      </div>
+      <div id="main">
+          <h2 class="displayer-name">Temperature</h2>
+          <p id="temperature-displayer" class="displayer">Unknown</p>
+          <h2 class="displayer-name">Humidity</h2>
+          <p id="humidity-displayer" class="displayer">Unknown</p>
+          <table>
+              <tr>
+                  <td>
+                      <h3 class="button-name">Light 1</h3>
+                      <label id="light1-btn" class="switch">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                      </label>
+                  </td>
+                  <td>
+                      <h3 class="button-name">Light 2</h3>
+                      <label id="light2-btn" class="switch">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                      </label>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <h3 class="button-name">Fan 1</h3>
+                      <label id="fan1-btn" class="switch">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                      </label>
+                  </td>
+                  <td>
+                      <h3 class="button-name">Engine 1</h3>
+                      <label id="engine1-btn" class="switch">
+                          <input type="checkbox">
+                          <span class="slider"></span>
+                      </label>
+                  </td>
+              </tr>
+          </table>
+          <!-- <button class="btn-start">Start</button> -->
+          <div class="container_mic">
+              <div class="circle_mic">
+                  <img src="mic.png" alt="mic-google" class="mic btn-start">
+              </div>
+          </div>
+          <!-- <button class="btn-stop">Stop</button>
+          <textarea class="output" cols="30" rows="10"></textarea> -->
+      </div>
+    </div>
+    <div id="light-1">Light 1 is on!</div>
+    <div id="light-2">Light 2 is on!</div>
+    <div id="fan-1">Fan 1 is on!</div>
+    <div id="engine-1">Engine 1 is on!</div>
+    <footer class="footer">
+        <div id="Footer">
+            <h4 style="color: rgb(221, 214, 200)">&copy; 2021 | <a  href="/">  Build 2.0</a> | <a href="">Contact</a> </h4>
+        </div>
+    </footer>
+    <div id="password-popup">
+        <ul>
+            <li>
+                <h1>Login Page</h1>
+            </li>
+            <li>
+                <label for="username-txt">Username:</label>
+            </li>
+            <li>
+                <input type="text" id="username-txt" />
+            </li>
+            <li>
+                <label for="password-txt">Password:</label>
+            </li>
+            <li>
+                <input type="password" id="password-txt" />
+            </li>
+            <li>
+                <span id="login-msg"></span>
+            </li>
+            <li>
+                <button id="login-button">Login</button>
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
